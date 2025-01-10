@@ -66,15 +66,17 @@ function Login() {
               Sign in
             </button>
           </div>
+          <div>
+            <p className="text-center">Kindly use bellow credentials : </p>
+            <p className="text-center">
+              Username : <strong>admin</strong>
+            </p>
+            <p className="text-center">
+              Password : <strong>12345</strong>
+            </p>
+          </div>
         </form>
       </div>
-      <p className="text-center">Kindly use bellow credentials : </p>
-      <p className="text-center">
-        Username : <strong>admin</strong>
-      </p>
-      <p className="text-center">
-        Password : <strong>12345</strong>
-      </p>
     </div>
   );
 }
