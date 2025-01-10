@@ -64,5 +64,5 @@ This project consists of two main components: a **backend** built with Python (F
 
 1. Clone the backend repository:
    ```bash
-   git clone https://github.com/your-repo/backend.git
-   cd backend
+   git clone https://github.com/prakhar-8999/blackrose_assingment.git
+   cd blackrose_assingment
