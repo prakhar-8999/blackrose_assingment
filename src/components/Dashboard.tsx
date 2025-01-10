@@ -27,8 +27,6 @@ function Dashboard() {
   useEffect(() => {
     if (lastMessage) {
       try {
-        console.log(lastMessage);
-
         const parsedData = JSON.parse(lastMessage.data);
         setData((prevData) => {
           const newData = [...prevData, parsedData];
