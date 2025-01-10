@@ -62,7 +62,11 @@ This project consists of two main components: a **backend** built with Python (F
 
 ### Backend Setup
 
-1. Clone the backend repository:
+1. Clone the backend repository :
    ```bash
    git clone https://github.com/prakhar-8999/blackrose_assingment.git
-   cd blackrose_assingment
+   cd blackrose_assingment```
+2. Credentials :
+   ```bash
+   username - admin
+   password - 123456
