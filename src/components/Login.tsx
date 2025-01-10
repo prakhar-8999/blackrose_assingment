@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
-import { Lock } from 'lucide-react';
+import {Lock} from "lucide-react";
+import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
+import {useAuth} from "../hooks/useAuth";
 
 function Login() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const { login } = useAuth();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const {login} = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       await login(username, password);
-      navigate('/');
+      navigate("/");
     } catch (err) {
-      setError('Invalid credentials');
+      setError("Invalid credentials");
     }
   };
 
@@ -25,7 +25,9 @@ function Login() {
       <div className="max-w-md w-full space-y-8 p-8 bg-gray-800 rounded-lg shadow-lg">
         <div className="text-center">
           <Lock className="mx-auto h-12 w-12 text-indigo-500" />
-          <h2 className="mt-6 text-3xl font-extrabold text-white">Sign in to your account</h2>
+          <h2 className="mt-6 text-3xl font-extrabold text-white">
+            Sign in to your account
+          </h2>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           {error && (
@@ -66,6 +68,13 @@ function Login() {
           </div>
         </form>
       </div>
+      <p className="text-center">Kindly use bellow credentials : </p>
+      <p className="text-center">
+        Username : <strong>admin</strong>
+      </p>
+      <p className="text-center">
+        Password : <strong>12345</strong>
+      </p>
     </div>
   );
 }
