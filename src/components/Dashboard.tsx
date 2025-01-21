@@ -77,7 +77,7 @@ function Dashboard() {
                   }}
                 />
                 <Line
-                  type="monotone"
+                  type="linear"
                   dataKey="value"
                   stroke="#6366F1"
                   strokeWidth={2}
